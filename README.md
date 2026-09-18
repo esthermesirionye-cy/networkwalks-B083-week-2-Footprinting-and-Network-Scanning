@@ -137,8 +137,6 @@ Objective: Send ICMP Echo requests and ARP requests to discover online systems w
  
  
  Part 3: Challenges Encountered & Solutions
- 
- ![CHALLENGES](issues-i-faced-when-i-powered-on-my-kali-at-first.png)
 
  
 During the execution of the lab modules, several operational and technical challenges arose, Below is a summary of these obstacles and how they were resolved
