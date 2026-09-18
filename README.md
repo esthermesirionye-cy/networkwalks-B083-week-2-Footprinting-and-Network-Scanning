@@ -13,7 +13,7 @@ PM2 [Network Scanning with Zenmap]
 
 
 
-                                        EXECUTIVE SUMMARY
+                                       **EXECUTIVE SUMMARY**
 This report documents the active and passive reconnaissance and network scanning activities conducted during Week 2. The primary objective was to demonstrate practical techniques for gathering target intelligence, identifying web application technologies, mapping DNS infrastructure, and auditing local network environments for active live hosts using industry-standard penetration testing tools.
 
 
@@ -32,32 +32,37 @@ Key Findings:Identified domain registrar information and active status.Retrieved
 
 
 .2. Web Technology Fingerprinting (whatweb)
+
 Objective: Identify technologies running on the target web server, including CMS platforms, web servers, embedded scripts, and content delivery networks.
 
-Execution:Bashwhatweb -a 3 <target-domain>
+Execution:
+![WHATWEB](whatweb.png)
 
 
 Key Findings:Detected target web server type, engine version, and scripting headers.Mapped web application components without impacting server availability
 
 
-.3. Web Application Firewall Detection (wafw00f)Objective: Determine if a Web Application Firewall (WAF) or Reverse Proxy (e.g., Cloudflare, AWS WAF, Imperva) is protecting the target web application.
+.3. Web Application Firewall Detection (wafw00f)
 
-Execution:Bashwafw00f https://<target-domain>
+Objective: Determine if a Web Application Firewall (WAF) or Reverse Proxy (e.g., Cloudflare, AWS WAF, Imperva) is protecting the target web application.
+
+Execution:
+![WAFWOOF](wafw00f.png)
 
 
 Key Findings:Identified whether active filtering engines are monitoring incoming web traffic.Determined firewall bypass or direct-access considerations for further security testing.
 
 
 4. DNS Infrastructure & Resolution Analysis (nslookup & dnsrecon)
-5. Objective: Perform query resolution and automated enumeration of subdomains, mail servers, and zone transfer records.
-6.
-7. Execution:Bash# Basic DNS
-8.
-9. Resolution
-nslookup <target-domain>
+  
+Objective: Perform query resolution and automated enumeration of subdomains, mail servers, and zone transfer records.
+
+Execution:
+![NSLOOKUP](nslookup.png) 
+
 
 # Comprehensive DNS Enumeration
-dnsrecon -d <target-domain> -t std
+![DNSRECON](dnsrecon.png)
 
 
 Key Findings:Mapped Primary IPv4/IPv6 address records (A/AAAA).Identified Mail Exchange (MX), Name Server (NS), and Text (TXT) records for SPF/DKIM verification.
