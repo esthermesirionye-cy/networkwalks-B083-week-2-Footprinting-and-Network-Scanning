@@ -13,7 +13,7 @@ PM2 [Network Scanning with Zenmap]
 
 
 
-                                       **EXECUTIVE SUMMARY**
+                                       EXECUTIVE SUMMARY
 This report documents the active and passive reconnaissance and network scanning activities conducted during Week 2. The primary objective was to demonstrate practical techniques for gathering target intelligence, identifying web application technologies, mapping DNS infrastructure, and auditing local network environments for active live hosts using industry-standard penetration testing tools.
 
 
@@ -31,6 +31,9 @@ Execution:
 Key Findings:Identified domain registrar information and active status.Retrieved contact handles and authoritative domain name servers
 
 
+
+
+
 .2. Web Technology Fingerprinting (whatweb)
 
 Objective: Identify technologies running on the target web server, including CMS platforms, web servers, embedded scripts, and content delivery networks.
@@ -42,6 +45,9 @@ Execution:
 Key Findings:Detected target web server type, engine version, and scripting headers.Mapped web application components without impacting server availability
 
 
+
+
+
 .3. Web Application Firewall Detection (wafw00f)
 
 Objective: Determine if a Web Application Firewall (WAF) or Reverse Proxy (e.g., Cloudflare, AWS WAF, Imperva) is protecting the target web application.
@@ -51,6 +57,9 @@ Execution:
 
 
 Key Findings:Identified whether active filtering engines are monitoring incoming web traffic.Determined firewall bypass or direct-access considerations for further security testing.
+
+
+
 
 
 4. DNS Infrastructure & Resolution Analysis (nslookup & dnsrecon)
@@ -78,6 +87,10 @@ Execution:
 
 
 Key Findings:Checked HTTP response codes (200 OK, 301 Moved Permanently, etc.).Inspected response headers (Server, X-Powered-By, Strict-Transport-Security, X-Frame-Options).
+
+
+
+
 
 
 
@@ -120,8 +133,12 @@ Objective: Send ICMP Echo requests and ARP requests to discover online systems w
  ![NETWORK_TOPOLOGY](recon_topology.png)
  
  
+
+ 
+ 
  Part 3: Challenges Encountered & Solutions
- ![CHALLENGES](issues-i-faced-when-i-powered-my-kali-at-first.png)
+ 
+ ![CHALLENGES](issues-i-faced-when-i-powered-on-my-kali-at-first.png)
 
  
 During the execution of the lab modules, several operational and technical challenges arose, Below is a summary of these obstacles and how they were resolved
