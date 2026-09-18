@@ -25,7 +25,7 @@ Part 1: Information Gathering & Reconnaissance Passive and active footprinting w
 Objective: Gather registrar details, registration/expiration dates, domain ownership records, and name servers.
 
 Execution:
-!(whois.png)
+![WHOIS](whois.png)
 
 
 Key Findings:Identified domain registrar information and active status.Retrieved contact handles and authoritative domain name servers
