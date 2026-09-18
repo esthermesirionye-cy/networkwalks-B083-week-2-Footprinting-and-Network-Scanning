@@ -13,16 +13,19 @@ PM2 [Network Scanning with Zenmap]
 
 
 
-Executive Summary: This report documents the active and passive reconnaissance and network scanning activities conducted during Week 2. The primary objective was to demonstrate practical techniques for gathering target intelligence, identifying web application technologies, mapping DNS infrastructure, and auditing local network environments for active live hosts using industry-standard penetration testing tools.
+                                        EXECUTIVE SUMMARY
+This report documents the active and passive reconnaissance and network scanning activities conducted during Week 2. The primary objective was to demonstrate practical techniques for gathering target intelligence, identifying web application technologies, mapping DNS infrastructure, and auditing local network environments for active live hosts using industry-standard penetration testing tools.
 
 
 Part 1: Information Gathering & Reconnaissance Passive and active footprinting was performed against target environments using multiple tools within Kali Linux to collect critical metadata prior to active network probing 
 
 
 .1. Domain Registration & Ownership Analysis (whois) 
+
 Objective: Gather registrar details, registration/expiration dates, domain ownership records, and name servers.
 
-Execution:Bashwhois <target-domain>
+Execution:
+!(whois.png)
 
 
 Key Findings:Identified domain registrar information and active status.Retrieved contact handles and authoritative domain name servers
