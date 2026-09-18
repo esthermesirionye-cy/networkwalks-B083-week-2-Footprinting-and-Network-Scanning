@@ -117,11 +117,11 @@ Objective: Send ICMP Echo requests and ARP requests to discover online systems w
  
  Exporting Results: Saved the output graphic in PDF format on the desktop as  Network_Topology.pnd for inclusion in project compliance artifacts.
  
- ![NETWORK_TOPOLOGY](recon_topology)
+ ![NETWORK_TOPOLOGY](recon_topology.png)
  
  
  Part 3: Challenges Encountered & Solutions
- ![CHALLENGES](issues-i-faced-when-i-powered-my-kali-at-first)
+ ![CHALLENGES](issues-i-faced-when-i-powered-my-kali-at-first.png)
 
  
 During the execution of the lab modules, several operational and technical challenges arose, Below is a summary of these obstacles and how they were resolved
