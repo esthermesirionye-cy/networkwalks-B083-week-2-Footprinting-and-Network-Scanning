@@ -13,7 +13,7 @@ PM2 [Network Scanning with Zenmap]
 
 
 
-                                       **EXECUTIVE SUMMARY**
+                                       EXECUTIVE SUMMARY
 This report documents the active and passive reconnaissance and network scanning activities conducted during Week 2. The primary objective was to demonstrate practical techniques for gathering target intelligence, identifying web application technologies, mapping DNS infrastructure, and auditing local network environments for active live hosts using industry-standard penetration testing tools.
 
 
