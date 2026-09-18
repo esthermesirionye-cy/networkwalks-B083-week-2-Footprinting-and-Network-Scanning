@@ -13,7 +13,7 @@ PM2 [Network Scanning with Zenmap]
 
 
 
-                                       EXECUTIVE SUMMARY
+                                       **EXECUTIVE SUMMARY**
 This report documents the active and passive reconnaissance and network scanning activities conducted during Week 2. The primary objective was to demonstrate practical techniques for gathering target intelligence, identifying web application technologies, mapping DNS infrastructure, and auditing local network environments for active live hosts using industry-standard penetration testing tools.
 
 
@@ -69,11 +69,12 @@ Key Findings:Mapped Primary IPv4/IPv6 address records (A/AAAA).Identified Mail E
 
 
 
-5. HTTP Header Analysis & Inspection (curl)
-6. Objective: Fetch and inspect HTTP request/response headers directly from the web application to check for misconfigurations or missing security headers.
-7.
-8.
-9. Execution:Bashcurl -I -L https://<target-domain>
+HTTP Header Analysis & Inspection (curl)
+
+Objective: Fetch and inspect HTTP request/response headers directly from the web application to check for misconfigurations or missing security headers.
+
+Execution:
+![CURL](curl.png)
 
 
 Key Findings:Checked HTTP response codes (200 OK, 301 Moved Permanently, etc.).Inspected response headers (Server, X-Powered-By, Strict-Transport-Security, X-Frame-Options).
@@ -84,11 +85,8 @@ Key Findings:Checked HTTP response codes (200 OK, 301 Moved Permanently, etc.).I
 
 Part 2: Network Scanning with Zenmap / NmapUsing the official Nmap graphical interface (Zenmap), network host discovery was performed to discover live systems on the local area network (LAN).
 
-
 1. Environment & Local IP Identification
  Objective: Locate local network configuration parameters, IP address, and subnet.
-
-Execution:DOSipconfig /all
 
 
 Configuration:Local IP Address: 10.0.0.5Subnet: 10.0.0.0/24
@@ -107,7 +105,7 @@ Objective: Send ICMP Echo requests and ARP requests to discover online systems w
 
  
  
- 4 HostsHost Name / TypeIP AddressMAC AddressGateway / Router10.0.0.100:50:56:E3:B3:2C
+4. HostsHost Name / TypeIP AddressMAC AddressGateway / Router10.0.0.100:50:56:E3:B3:2C
  
  Target Host 110.0.0.400:0C:29:C0:94:8F
  
@@ -119,10 +117,12 @@ Objective: Send ICMP Echo requests and ARP requests to discover online systems w
  
  Exporting Results: Saved the output graphic in PDF format on the desktop as  Network_Topology.pnd for inclusion in project compliance artifacts.
  
- 
+ ![NETWORK_TOPOLOGY](recon_topology)
  
  
  Part 3: Challenges Encountered & Solutions
+ ![CHALLENGES](issues-i-faced-when-i-powered-my-kali-at-first)
+
  
 During the execution of the lab modules, several operational and technical challenges arose, Below is a summary of these obstacles and how they were resolved
 
